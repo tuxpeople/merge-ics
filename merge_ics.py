@@ -8,7 +8,7 @@
 #
 #      Copyright:    (C) 2007 by Thomas Deutsch <thomas@tuxpeople.org>
 #
-#      Version:      1.5pre12 (2007-06-29)
+#      Version:      1.6(2007-07-02)
 #
 #      License:      GPL v2
 #
@@ -30,17 +30,6 @@
 #                    It needs no parameters or options, but you should configure
 #                    the variables in the script before you run it ;)
 #
-#      Dependencies: This script needs the iCalendar package for Python. You ca
-#                    get it here: http://codespeak.net/icalendar. Note: This pack-
-#                    age has also dependencies: It is dependent on the datetime
-#                    package, so it requires Python >= 2.3. There are no other
-#                    dependencies.
-#
-#      Credits:      Max M (iCalendar Package), Christof Buergi (Codecontributions),
-#                    Michael Naef and Rolf Pfister (both: Useful tipps), Andreas
-#                    Ahlenstorf (Useful tipps, and he has told me how easy python
-#                    is. That's why I'm using it...) and all other helpers ;)
-# 
 #############################
 # Variables:                #
 #############################

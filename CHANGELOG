@@ -1,4 +1,5 @@
 merge_ics 1.6 (2007-07-02)
 ==========================
 
-* Wrote warning into README regarding the VEVENT 'thing'§
+* Wrote warning into README regarding the VEVENT 'thing'
+* split up header into different fiels (dependencies, credits etc...)

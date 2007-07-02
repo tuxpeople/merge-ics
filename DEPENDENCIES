@@ -1,0 +1,8 @@
+DEPENDENCIES
+------------
+
+This script needs the iCalendar package for Python. You can
+get it here: http://codespeak.net/icalendar. Note: This pack-
+age has also dependencies: It is dependent on the datetime
+package, so it requires Python >= 2.3. There are no other
+dependencies.
