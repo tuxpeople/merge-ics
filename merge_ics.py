@@ -26,7 +26,7 @@
 #                    with this program; if not, write to the Free Software Foundation, Inc.,
 #                    51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA 
 #
-#      Usage:        This script is made to be stared by hand or as a cronjob.
+#      Usage:        This script is made to be started by hand or as a cronjob.
 #                    It needs no parameters or options, but you should configure
 #                    the variables in the script before you run it ;)
 #
