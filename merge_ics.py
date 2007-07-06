@@ -64,7 +64,15 @@ DEBUGFILE = '/var/log/merge_ics.log'
 
 # We need some stuff
 import glob, sys
-DEBUGMSG = 'import of glob and sys done\n'
+from time import *
+
+DEBUGMSG = 'Log started\n'
+
+lt = localtime()
+DEBUGMSG = DEBUGMSG + strftime("Tag/Monat/Jahr: %d/%m/%Y", lt) + '\n'
+DEBUGMSG = DEBUGMSG + strftime("Stunde:Minute:Sekunde: %H:%M:%S", lt) + '\n'
+
+DEBUGMSG = DEBUGMSG + 'import of glob and sys done\n'
 
 # We need the iCalendar package from http://codespeak.net/icalendar/
 from icalendar import Calendar, Event
