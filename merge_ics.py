@@ -8,7 +8,7 @@
 #
 #      Copyright:    (C) 2007 by Thomas Deutsch <thomas@tuxpeople.org>
 #
-#      Version:      1.6(2007-07-02)
+#      Version:      1.6(XXXX-XX-XX)
 #
 #      License:      GPL v2
 #
