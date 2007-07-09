@@ -49,6 +49,9 @@ MY_DOMAIN = 'default.com'
 # a short, one word name for this tool, used in errormessages as identifier
 MY_SHORTNAME = 'merge_ics.py'
 
+# The Timezone for the new file. This is here, becaus Mozilla Sunbird 0.5 want it ;). It's the general Timezone of the file. Normaly, an entry has it one timezone.
+OUR_TIMEZONE = 'Europe/Zurich'
+
 # Name of the new calendar
 CALENDARNAME = 'My new calendar'
 
@@ -84,6 +87,11 @@ newcal.add('prodid', '-//' + MY_NAME + '//' + MY_DOMAIN + '//')
 newcal.add('version', '2.0')
 newcal.add('x-wr-calname', CALENDARNAME)
 DEBUGMSG = DEBUGMSG + 'new calendar started\n'
+
+# we need to add a timezone, because some clients want it (e.g. sunbird 0.5)
+newtimezone = Timezone()
+newtimezone.add('tzid', OUR_TIMEZONE)
+newcal.add_component(newtimezone)
 
 # Looping through the existing calendarfiles
 for s in glob.glob(CALDIR + '*.ics'):
