@@ -58,7 +58,7 @@ DEBUGMSG = DEBUGMSG + strftime("Stunde:Minute:Sekunde: %H:%M:%S", lt) + '\n'
 DEBUGMSG = DEBUGMSG + 'import of glob and sys done\n'
 
 # We need the iCalendar package from http://codespeak.net/icalendar/
-from icalendar import Calendar, Event
+from icalendar import Calendar, Event, Timezone
 DEBUGMSG = DEBUGMSG + 'inport of icalendar done\n'
 
 # Open the new calendarfile and adding the information about this script to it
