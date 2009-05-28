@@ -9,5 +9,6 @@ My thank goes to (list not in a specific order):
  - Rolf Pfister (Useful tipps)
  - Andreas Ahlenstorf (Useful tipps, and he has told me how easy python is. That's why I'm using it...)
  - Dieter Wirz (testing on MacOS, tipps)
+ - Beat Wirthlin (added features to ignore historic and duplicted events, script refactoring)
  
  and all other helpers ;)

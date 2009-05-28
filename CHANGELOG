@@ -2,6 +2,9 @@ merge_ics 1.7 (in development)
 ==============================
 
 * fix for issue 3 "NameError: name 'Timezone' is not defined" (thanks to jjspreij)
+* feature to ignore historic events
+* feature to ignore duplicated events
+* script clean up
 
 merge_ics 1.6 (2007-07-09)
 ==========================
