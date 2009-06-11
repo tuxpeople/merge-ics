@@ -95,7 +95,8 @@ for s in glob.glob(CALDIR + '*.ics'):
                     if HISTORY_DAYS > 0:
                         eventStart = component.decoded('dtstart').strftime('%Y%m%d')
                         if eventStart < limit:
-                            DEBUGMSG += '  skipped historic event: ' + eventStart + ' is before ' + limit + '\n'
+                            eventId = str(component['dtstart']) + ' | ' + str(component['dtend']) + ' | ' + str(component['summary'])
+                            DEBUGMSG += '  skipped historic event before ' + limit + ' : ' + eventId + '\n'
                             continue
                     if IGNORE_DUPLICATE:
                         eventId = str(component['dtstart']) + ' | ' + str(component['dtend']) + ' | ' + str(component['summary'])
@@ -106,6 +107,7 @@ for s in glob.glob(CALDIR + '*.ics'):
                             continue
                 except:
                     # ignore events with missing dtstart, dtend or summary
+                    DEBUGMSG += ' ! skipped an event with missing dtstart, dtend or summary. it's likely historic or duplicated.\n'
                     continue
                 newcal.add_component(component)
         # close the existing file
