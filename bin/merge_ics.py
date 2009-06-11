@@ -107,7 +107,7 @@ for s in glob.glob(CALDIR + '*.ics'):
                             continue
                 except:
                     # ignore events with missing dtstart, dtend or summary
-                    DEBUGMSG += ' ! skipped an event with missing dtstart, dtend or summary. it's likely historic or duplicated.\n'
+                    DEBUGMSG += ' ! skipped an event with missing dtstart, dtend or summary. likely historic or duplicated event.\n'
                     continue
                 newcal.add_component(component)
         # close the existing file
