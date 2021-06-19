@@ -1,5 +1,12 @@
 # README
 
+---
+**NOTE**
+
+This repository is now not longer actively maintained and therefor archived.
+
+---
+
 **IMPORTANT: This code ist still beta... Read this for more information**
 
 **IMPORTANT: CURRENTLY NOT UNDER ACTIVE DEVELOPMENT. SORRY**
